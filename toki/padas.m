@@ -1,0 +1,1 @@
+function out = padas(I1, I2)I1size = size(I1)I2size = size(I2)diffsize = I1size - I2sizeout = padarray(I2, diffsize, 'post')endfunction

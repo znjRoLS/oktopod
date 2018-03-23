@@ -1,0 +1,1 @@
+function out = reverse_bits_matrix(n) out = zeros([size(n) 8]);for ii = 1:8  out(:, :, ii) = (bitand(n, 2 ^ (ii-1)) > 0);endfor#flipdim(out, 3);for ii = 1:8  out(:, :, ii) = out(:, :, ii) * (2 ^ (8 - ii));endforout = sum(out, 3);out = uint8(out);endfunction

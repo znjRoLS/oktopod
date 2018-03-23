@@ -1,0 +1,1 @@
+function week1_quantizer(imagetoload, quant)  I = imread(imagetoload);  if (quant < 0) quant = 0; endif  if (quant > 7) quant = 7; endif  quant = 2^quant;  I /= quant;  I *= quant;  imshow(I)endfunction

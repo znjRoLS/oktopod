@@ -1,0 +1,1 @@
+function week1_lowres(imagefile, blursize)  pkg load image;  I = imread(imagefile);  I2 = colfilt(I, [blursize blursize], "distinct", @mean);  I3 = uint8(I2);  imshow(I3);endfunction

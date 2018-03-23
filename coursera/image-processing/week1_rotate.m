@@ -1,0 +1,1 @@
+function week1_rotate(imagefile, angle)  I = imread(imagefile);  I2 = imrotate(I, angle);  imshow(I2);endfunction

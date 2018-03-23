@@ -1,0 +1,1 @@
+function week1_blur(imagefile, blursize)  pkg load image;  I = imread(imagefile);  I2 = colfilt(I, [blursize blursize], "sliding", @mean);  I3 = uint8(I2);  imshow(I3);endfunction

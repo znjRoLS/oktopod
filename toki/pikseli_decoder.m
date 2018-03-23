@@ -1,0 +1,1 @@
+function out = pikseli_decoder(im1, bitnum) mask = uint8(2 ^ bitnum - 1);imoriginal = bitand(im1, mask);out = reverse_bits_matrix(imoriginal);endfunction

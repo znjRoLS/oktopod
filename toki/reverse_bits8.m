@@ -1,0 +1,1 @@
+function out = reverse_bits8(n) out = 0;for ii = 1:8  out *= 2;  out += (bitand(n,(2 ^ ii / 2)) != 0);endforendfunction
